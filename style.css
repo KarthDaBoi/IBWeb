@@ -1,0 +1,16 @@
+h1 {
+    text-align: center; 
+    color: white;
+    background-color: black;
+}
+.pm15 {
+    float: right;
+}
+.imgbox {
+    padding: 20px;
+    margin: auto;
+}
+
+body {
+    margin: 0px;
+}
