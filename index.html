@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL GOAT Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-        <link rel= "stylesheet" href = "style.css">
-        <script src="myscript.js"></script>
-        <title>Karth's Website</title>
+        <h1>NFL GOAT Selector 🏈</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <body>
-        <h1 style="font-family: sans-serif;">Who is the GOAT of Football 🏈?</h1>
-        <div class="imgbox">
-            <img src="brady.jpeg" style="width: 20%; height: 20%">
-            <input type="button" value="Tom Brady" id="tb12" style="background-color:darkblue; color: white"></input>
-        </div>
-        <div class="imgbox">
-            <img src="mahomey.webp" style="width: 25%; height: 25%">
-            <input type="button" value="Patty Mahomey" id="p15" style="background-color: red; color:white"></input>
-        </div>
-       
-    </body>
+    <main>
+        <button id="toggle-mode">Toggle Dark Mode</button>
+        <section id="home">
+            <h2>Who is the Greatest of All Time?</h2>
+            <div id="goat-selection">
+                <div class="player">
+                    <img src="brady.jpeg" alt="Tom Brady" class="goat-image">
+                    <button onclick="selectGOAT('brady')">Tom Brady</button>
+                </div>
+                <div class="player">
+                    <img src ="mahomey.webp" alt="Patrick Mahomes" class="goat-image">
+                    <button onclick="selectGOAT('mahomes')">Patrick Mahomes</button>
+                </div>
+            </div>     
+
+            <div id="goat-result"></div>
+        </section>
+        <section id="about">
+            <h2>About the GOATs</h2>
+            <p>Tom Brady and Patrick Mahomes are two of the greatest quarterbacks in NFL history. </p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="myscript.js"></script>
+</body>
 </html>
