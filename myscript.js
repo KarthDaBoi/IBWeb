@@ -1,3 +1,5 @@
+
+// Selects the options in the website
 function selectGOAT(player) {
     let result = document.getElementById("goat-result");
     if (player === "brady") {
@@ -7,6 +9,7 @@ function selectGOAT(player) {
     }
 }
 
+// Functionality for when the user types in the information in the contact form
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
     let name = document.getElementById("name").value;
@@ -22,6 +25,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }
 });
 
+// Changes the website between dark mode and light mode
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     let modeText = document.getElementById("mode-text");
@@ -32,6 +36,10 @@ function toggleDarkMode() {
     }
 }  
 
+/* Stores the saved dark/light mode setting for the user
+
+    - Next time they log on to the website, the data is saved and their set color mode will appear
+*/
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggle-mode");
     const body = document.body;
